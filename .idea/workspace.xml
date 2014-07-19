@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/routes.rb" changelist="3b091d24-a443-46bc-a4ce-d4fd37a842fd" time="1405639461294" ignored="false" />
     <file path="/database.yml" changelist="3b091d24-a443-46bc-a4ce-d4fd37a842fd" time="1405646016110" ignored="false" />
-    <file path="/index.html.erb" changelist="3b091d24-a443-46bc-a4ce-d4fd37a842fd" time="1405649248463" ignored="false" />
+    <file path="/index.html.erb" changelist="3b091d24-a443-46bc-a4ce-d4fd37a842fd" time="1405800473493" ignored="false" />
     <file path="/Gemfile" changelist="3b091d24-a443-46bc-a4ce-d4fd37a842fd" time="1405793898629" ignored="false" />
     <file path="/application.rb" changelist="3b091d24-a443-46bc-a4ce-d4fd37a842fd" time="1405793596113" ignored="false" />
     <file path="/production.rb" changelist="3b091d24-a443-46bc-a4ce-d4fd37a842fd" time="1405795890645" ignored="false" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="3240" selection-end="3240" vertical-scroll-proportion="0.8532374">
+            <state line="63" column="35" selection-start="2928" selection-end="2928" vertical-scroll-proportion="0.7553957">
               <folding />
             </state>
           </provider>
@@ -637,11 +637,6 @@
         <state line="3" column="45" selection-start="199" selection-end="199" vertical-scroll-proportion="0.06948229" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/Chrezmo-Logo.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="48" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
@@ -684,9 +679,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/Chrezmo-Logo.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="3240" selection-end="3240" vertical-scroll-proportion="0.8532374">
+        <state line="63" column="35" selection-start="2928" selection-end="2928" vertical-scroll-proportion="0.7553957">
           <folding />
         </state>
       </provider>

@@ -4,9 +4,50 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>www.chrezmo.com/Chrezmo-Logo-Name.gif</title>
   <link href="Chrezmo.css" rel="stylesheet" type="text/css" media="all" />
-</head>
+  <link href="Chrezmo.css" rel="stylesheet" type="text/css" />
 
-<body>
+  <style type="text/css">
+      #spokes {
+          position:absolute;
+          top:150px;
+          left:200px;
+          z-index:0;
+      }
+
+      #homeSymbol {
+          position:absolute;
+          top:164px;
+          left:436px;
+          z-index:1;
+      }
+  </style>
+
+  <script type="text/javascript">
+      function MM_swapImgRestore() { //v3.0
+          var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+      }
+      function MM_preloadImages() { //v3.0
+          var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+              var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+                  if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+      }
+
+      function MM_findObj(n, d) { //v4.01
+          var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+              d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+          if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+          for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+          if(!x && d.getElementById) x=d.getElementById(n); return x;
+      }
+
+      function MM_swapImage() { //v3.0
+          var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+              if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+      }
+  </script>
+</head>
+<body onload="MM_preloadImages('assets/Chrezmo-Letter-H-RED.gif')">
+
 <header><img src="assets/Chrezmo-Logo-Name.png" width="500" height="50" /></header>
 <h1>We saw it coming </h1>
 <div class="container">
@@ -20,7 +61,7 @@
     <p> The above links demonstrate a basic navigational structure using an unordered list styled with CSS. Use this as a starting point and modify the properties to produce your own unique look. If you require flyout menus, create your own using a Spry menu, a menu widget from Adobe's Exchange or a variety of other javascript or CSS solutions.</p>
     <p>If you would like the navigation along the top, simply move the ul.nav to the top of the page and recreate the styling.</p>
     <!-- end .sidebar1 --></div>
-  <img alt="nav" border="0" img id="spokes" img src="assets/Chrezmo-Logo.gif" width="500" height="500"/>
-    </div>
+  <img src="assets/Chrezmo-Logo1.png" width="500" height="500" alt="nav" id="spokes" /> </div>
+<a href="www.google.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('homeSymbol','','assets/Chrezmo-Letter-H-RED.gif',1)"><img src="assets/Chrezmo-Letter-H.gif" width="23" height="37" id="homeSymbol" title="Home" /></a>
 </body>
 </html>

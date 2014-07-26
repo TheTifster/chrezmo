@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.chrezmo.com">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>www.chrezmo.com/Chrezmo-Logo-Name.gif</title>
+  <link href="Chrezmo.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="Chrezmo.css" rel="stylesheet" type="text/css" />
+
+  <style type="text/css">
+      #spokes {
+          position:absolute;
+          top:150px;
+          left:200px;
+          z-index:0;
+      }
+
+      #homeSymbol {
+          position:absolute;
+          top:164px;
+          left:436px;
+          z-index:1;
+      }
+  </style>
+
+</head>
+<body onload="MM_preloadImages('assets/Chrezmo-Letter-H-RED.gif')">
+
+<header><%=image_tag("Chrezmo-Logo-Name.png", size:"500x50") %></header>
+<h1>We saw it coming </h1>
+<div class="container">
+  <div class="sidebar1">
+    <ul class="nav">
+      <%= link_to('Prophecies', {:action => 'prophecy'}) %><br />
+      <%= link_to 'Forums', forem.forums_path %><br />
+    </ul>
+    <p>The concept of prophesizing.</p>
+    <!-- end .sidebar1 --></div>
+  <%=image_tag("Chrezmo-Logo.gif", size:"500x500", id:"spokes")%>
+</div>
+<%=link_to(image_tag("Chrezmo-Letter-H.gif", size:"23x37", id:"homeSymbol", title:"Home"), {:action => 'index'}) %>
+<p>Make a prophecy:</p>
+<%= text_field_tag 'zip', nil, maxlength: 25 %>
+</body>
+</html>

@@ -1,0 +1,3 @@
+class ProphecyController < ApplicationController
+
+end

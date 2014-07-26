@@ -1,28 +1,29 @@
-== README
+== README 24JUL2014
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is Chrezmo, an anonymous prophecy network. The concept of this site is simple:
 
-Things you may want to cover:
+>user logs in with email address
+    >>people don't like remembering usernames
+    >>usernames are not used here anyway
+    >>emails will NEVER be sent to users; they are solely used for identification
+>user inputs five keywords (nouns and verbs only) and a date-of-prediction
+    >>for example:
+        >>>ball fire worm pedal jump 11/11/2017
+        >>>refugees syria thousands help aid 03/11/2015
+>those keywords are then queried at 11:59pm on the date-of-prediction via several newsportals
+    >>only articles written the day-of can be used for comparison
+>if there is an article that contains more than one of those keywords, the user is awarded prophet-points
+    >>prophet-points are calculated by an algorithm
+        >>>[(keywords matched/5) * (date-of-prediction - date-predicted in DAYS)] - [(5 - keywords matched) * 0.1]
+    >>each user's prophet-points are cumulative and displayed next to 'anonymous' in all of their posts
+    >>prophet-points are meant to be the main identifier of users, not usernames, post-counts, or avatatar bling
+>if no article contains more than one specified keyword, the user's prophet-point count is reduced by 0.2
+    >>this means negative prophet-points are possible
 
-* Ruby version
+In the future, a wagering system might be implemented whereby users can link a prediction they've made in the forum,
+back up that prediction with facts or nonsense, and other users can either bet for or against it to gain (or lose)
+0.1 prophecy points.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+The purpose of all of this is to make predictions, wild or otherwise. That's it. The name 'Chrezmo' is a bastardization
+of 'chresmomancy': the ancient divination technique of listening to the ramblings of the sick or insane, which coincidentally,
+is the target community of this project.

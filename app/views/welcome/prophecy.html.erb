@@ -30,6 +30,7 @@
 <div class="container">
   <div class="sidebar1">
     <ul class="nav">
+      <%= link_to 'Home', main_app.root_path %><br />
       <%= link_to('Prophecies', {:action => 'prophecy'}) %><br />
       <%= link_to 'Forums', forem.forums_path %><br />
     </ul>
@@ -39,6 +40,10 @@
 </div>
 <%=link_to(image_tag("Chrezmo-Letter-H.gif", size:"23x37", id:"homeSymbol", title:"Home"), {:action => 'index'}) %>
 <p>Make a prophecy:</p>
-<%= text_field_tag 'zip', nil, maxlength: 25 %>
+Keyword 1:<%= text_field_tag 'zip', nil, maxlength: 25 %><br /><br />
+Keyword 2:<%= text_field_tag 'zip', nil, maxlength: 25 %><br /><br />
+Keyword 3:<%= text_field_tag 'zip', nil, maxlength: 25 %><br /><br />
+Keyword 4:<%= text_field_tag 'zip', nil, maxlength: 25 %><br /><br />
+Keyword 5:<%= text_field_tag 'zip', nil, maxlength: 25 %>
 </body>
 </html>

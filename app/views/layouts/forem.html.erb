@@ -11,9 +11,7 @@
 <% flash.each do |key, value| %>
     <%= content_tag(:div, value, class: "alert alert-#{key}") %>
 <% end %>
-
 <%= link_to 'Home', main_app.root_path %>
-
 
 <header>
   <nav>

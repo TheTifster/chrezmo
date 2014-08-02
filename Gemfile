@@ -33,6 +33,8 @@ gem "devise"
 #Forem theme
 gem 'forem-bootstrap', github: "radar/forem-bootstrap"
 gem 'forem-redcarpet', github: "radar/forem-redcarpet"
+#Calendar
+gem 'fullcalendar-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

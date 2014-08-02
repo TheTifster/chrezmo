@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140725031229) do
+ActiveRecord::Schema.define(version: 20140729031500) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -111,8 +111,17 @@ ActiveRecord::Schema.define(version: 20140725031229) do
   add_index "forem_views", ["user_id"], name: "index_forem_views_on_user_id", using: :btree
   add_index "forem_views", ["viewable_id"], name: "index_forem_views_on_viewable_id", using: :btree
 
-  create_table "prophecies", id: false, force: true do |t|
-    t.text "key_one"
+  create_table "prophecies", force: true do |t|
+    t.string   "keyone",     default: "", null: false
+    t.string   "keytwo",     default: "", null: false
+    t.string   "keythree",   default: "", null: false
+    t.string   "keyfour",    default: "", null: false
+    t.string   "keyfive",    default: "", null: false
+    t.datetime "dateone"
+    t.datetime "datetwo"
+    t.integer  "tscore",     default: 0,  null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

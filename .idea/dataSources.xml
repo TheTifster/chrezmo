@@ -3,9 +3,9 @@
   <component name="DataSourceManagerImpl" format="xml" hash="3495644198">
     <data-source source="LOCAL" name="Rails chrezmo: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="c4f38700-bb49-45b0-91c6-0842ba95562a">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:chrezmo_production</jdbc-url>
-      <user-name>chrezmo</user-name>
-      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe9dfe2dff8dfefdff0dfe7dfe5dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/chrezmo_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfeedf9bdfdadfdadfd3dfeedfc5dff0df8bdfeadf89df8edf8ddff7df8adf8fdf94</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -17,7 +17,7 @@
     </data-source>
     <data-source source="LOCAL" name="Rails chrezmo: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="36df4efb-f4ef-4f96-bafc-43420871ac38">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:chrezmo_development</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/chrezmo_development</jdbc-url>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -29,7 +29,7 @@
     </data-source>
     <data-source source="LOCAL" name="Rails chrezmo: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="4b0ae8f6-2270-4c8f-b201-7b3187290939">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:chrezmo_test</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/chrezmo_test</jdbc-url>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>

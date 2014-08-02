@@ -3,10 +3,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>www.chrezmo.com/Chrezmo-Logo-Name.gif</title>
-  <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
-  <script src='lib/jquery.min.js'></script>
-  <script src='lib/moment.min.js'></script>
-  <script src='fullcalendar/fullcalendar.js'></script>
   <link href="Chrezmo.css" rel="stylesheet" type="text/css" media="all" />
   <link href="Chrezmo.css" rel="stylesheet" type="text/css" />
 
@@ -25,15 +21,6 @@
           z-index:1;
       }
   </style>
-  <script>$(document).ready(function() {
-
-      $('#calendar').fullCalendar({
-          dayClick: function() {
-              alert('a day has been clicked!');
-          }
-      })
-
-  });</script>
 
 </head>
 
@@ -43,15 +30,30 @@
   <div class="sidebar1">
     <ul class="nav">
       <%= link_to 'Home', main_app.root_path %><br />
-      <%= link_to'Prophecies', "prophecies/new" %><br />
       <%= link_to 'Forums', forem.forums_path %><br />
-      <%= link_to 'My Prophecies', "prophecies/" %><br />
+      <%= link_to 'My Prophecies', {:controller => 'prophecies',:action => 'index'}%><br />
     </ul>
     <p>Basic introductory paragraph</p>
     <!-- end .sidebar1 --></div>
   <%=image_tag("Chrezmo-Logo.gif", size:"500x500", id:"spokes")%>
 </div>
-<div id='calendar'></div>
 <%= image_tag("Chrezmo-Letter-H.gif", size:"23x37", id:"homeSymbol", title:"Home") %>
+<h1>New Prophecy</h1>
+
+<%= form_for :prophecy, url: prophecies_path do |f| %>
+    <%= f.label :keyone %><br>
+    <%= f.text_field :keyone %><br>
+    <%= f.label :keytwo %><br>
+    <%= f.text_field :keytwo %><br>
+    <%= f.label :keythree %><br>
+    <%= f.text_field :keythree %><br>
+    <%= f.label :keyfour %><br>
+    <%= f.text_field :keyfour %><br>
+    <%= f.label :keyfive %><br>
+    <%= f.text_field :keyfive %><br>
+    <%= f.label :datetwo %><br>
+    <%= f.text_field :datetwo %><br>
+    <%= f.submit "Go" %>
+<% end %>
 </body>
 </html>

@@ -3,12 +3,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>www.chrezmo.com/Chrezmo-Logo-Name.gif</title>
-  <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+  <link rel='stylesheet' href='assets/fullcalendar.css.scss' type="text/css" />
   <script src='lib/jquery.min.js'></script>
   <script src='lib/moment.min.js'></script>
-  <script src='fullcalendar/fullcalendar.js'></script>
-  <link href="Chrezmo.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="Chrezmo.css" rel="stylesheet" type="text/css" />
+  <script src='assets/fullcalendar.js'></script>
 
   <style type="text/css">
       #spokes {
@@ -25,15 +23,19 @@
           z-index:1;
       }
   </style>
-  <script>$(document).ready(function() {
-
+  <script type='text/javascript'>$
+  (document).ready(function() {
       $('#calendar').fullCalendar({
-          dayClick: function() {
-              alert('a day has been clicked!');
+          height: 650,
+          aspectRatio: 1.5,
+          header: {
+              left: 'today',
+              center: 'prev,title,next',
+              right: 'month,basicWeek,basicDay'
           }
       })
-
-  });</script>
+});
+  </script>
 
 </head>
 
@@ -52,6 +54,7 @@
   <%=image_tag("Chrezmo-Logo.gif", size:"500x500", id:"spokes")%>
 </div>
 <div id='calendar'></div>
+
 <%= image_tag("Chrezmo-Letter-H.gif", size:"23x37", id:"homeSymbol", title:"Home") %>
 </body>
 </html>

@@ -3,10 +3,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>www.chrezmo.com/Chrezmo-Logo-Name.gif</title>
-  <link rel='stylesheet' href='assets/fullcalendar.css.scss' type="text/css" />
-  <script src='lib/jquery.min.js'></script>
-  <script src='lib/moment.min.js'></script>
-  <script src='assets/fullcalendar.js'></script>
+  <link rel='stylesheet' href='assets/fullcalendar.css.scss' />
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/moment.min.js"></script>
+  <script src="assets/fullcalendar.js"></script>
 
   <style type="text/css">
       #spokes {
@@ -24,17 +24,27 @@
       }
   </style>
   <script type='text/javascript'>$
-  (document).ready(function() {
+  $(document).ready(function() {
+      var date = new Date();
+      var d = date.getDate();
+      var m = date.getMonth();
+      var y = date.getFullYear();
       $('#calendar').fullCalendar({
+          editable: true,
           height: 650,
-          aspectRatio: 1.5,
           header: {
               left: 'today',
               center: 'prev,title,next',
               right: 'month,basicWeek,basicDay'
-          }
+          },
+          events: [
+              {
+                  title: 'test',
+                  start: new Date(y, m, 23),
+                  allDay: true
+              }]
       })
-});
+  });
   </script>
 
 </head>

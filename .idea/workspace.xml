@@ -7,20 +7,22 @@
     <file path="/prophecy.html.erb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406677184376" ignored="false" />
     <file path="/welcome_controller.rb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406610668960" ignored="false" />
     <file path="/prophecy_controller.rb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406608689370" ignored="false" />
-    <file path="/routes.rb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406988794129" ignored="false" />
+    <file path="/routes.rb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407458005836" ignored="false" />
     <file path="/20140729031500_prophecies.rb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406604198737" ignored="false" />
-    <file path="/prophecies_controller.rb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406994128299" ignored="false" />
+    <file path="/prophecies_controller.rb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407468225180" ignored="false" />
     <file path="/show.html.erb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406987167698" ignored="false" />
     <file path="/new.html.erb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406995290700" ignored="false" />
-    <file path="/index.html.erb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407097711152" ignored="false" />
+    <file path="/index.html.erb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407468426058" ignored="false" />
     <file path="/Rails chrezmo: development" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406685740214" ignored="false" />
-    <file path="/Gemfile" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406997191632" ignored="false" />
+    <file path="/Gemfile" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407375452661" ignored="false" />
     <file path="/application.css.scss" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407095987098" ignored="false" />
     <file path="/welcome.js.coffee" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1406999701250" ignored="false" />
     <file path="/fullcalendar.css.scss" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407025749076" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407088929772" ignored="false" />
     <file path="/application.css" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407097166288" ignored="false" />
-    <file path="$PROJECT_DIR$/log/development.log" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407097425619" ignored="false" />
+    <file path="$PROJECT_DIR$/log/development.log" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407097871422" ignored="false" />
+    <file path="/prophecy.rb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407467602733" ignored="false" />
+    <file path="/user.rb" changelist="63b2e782-a3ed-4d25-af73-bf148d3319ce" time="1407458502867" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,89 @@
     <favorites_list name="chrezmo" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="prophecies_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/prophecies_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="21" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="41" selection-start="4121" selection-end="4121" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="38" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/prophecies/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="6" selection-start="1004" selection-end="1083" vertical-scroll-proportion="-16.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/prophecies/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="26" selection-start="2875" selection-end="2875" vertical-scroll-proportion="0.6108727">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prophecy.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/prophecy.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="18" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="8" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="5" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="7" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -54,14 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/prophecies/list.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/prophecies/show.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/prophecies_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/prophecies/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/prophecies/new.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/fullcalendar.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/fullcalendar.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/fullcalendar.js" />
@@ -70,14 +146,22 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/prophecy.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/prophecies_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/prophecies/index.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="446" />
-    <option name="y" value="166" />
-    <option name="width" value="1352" />
-    <option name="height" value="689" />
+    <option name="x" value="557" />
+    <option name="y" value="60" />
+    <option name="width" value="1272" />
+    <option name="height" value="919" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -105,7 +189,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -134,7 +217,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chrezmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chrezmo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -149,99 +246,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chrezmo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chrezmo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chrezmo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chrezmo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chrezmo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chrezmo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chrezmo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chrezmo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -362,14 +372,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="446" y="166" width="1352" height="689" extended-state="0" />
-    <editor active="false" />
+    <frame x="557" y="60" width="1272" height="919" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946917" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33488372" sideWeight="0.670904" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3570248" sideWeight="0.670904" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -445,123 +455,106 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/prophecies/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="7" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/prophecy.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/prophecies/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="37" selection-start="1123" selection-end="1185" vertical-scroll-proportion="-4.3461537" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="65" selection-start="210" selection-end="210" vertical-scroll-proportion="0.064638786" />
+        <state line="5" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="-0.65384614" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/forem.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="27" selection-end="27" vertical-scroll-proportion="0.064638786">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/fullcalendar.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="34" selection-start="2728" selection-end="2728" vertical-scroll-proportion="5.0347347">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="44" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="12" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.6938776">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.2027833">
-          <folding />
-        </state>
+        <state line="18" column="40" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="54" selection-start="707" selection-end="707" vertical-scroll-proportion="0.5784499">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="18" column="54" selection-start="707" selection-end="707" vertical-scroll-proportion="0.42206895" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="45" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/fullcalendar.js">
+    <entry file="file://$USER_HOME$/Desktop/_/RoR/chrezmo/google-search-master/spec/item_news_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/_/RoR/chrezmo/google-search-master/examples/web.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="50" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140721235027_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1403663016000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140725023049_devise_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="197" selection-end="197" vertical-scroll-proportion="0.44990548">
+        <state line="22" column="39" selection-start="654" selection-end="693" vertical-scroll-proportion="0.3721591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/prophecies/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="6" selection-start="1004" selection-end="1083" vertical-scroll-proportion="-16.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="7" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="41" selection-start="4121" selection-end="4121" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/prophecy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/prophecies_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="21" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/prophecies/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="26" selection-start="2875" selection-end="2875" vertical-scroll-proportion="0.6108727">
           <folding />
         </state>
       </provider>

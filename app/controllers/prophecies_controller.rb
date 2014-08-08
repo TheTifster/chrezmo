@@ -12,32 +12,31 @@ class PropheciesController < ApplicationController
   end
   def forums
   end
-  def keyone
-  end
-  def keytwo
-  end
-  def keythree
-  end
-  def keyfour
-  end
-  def keyfive
+  def image
   end
   def new
     render "prophecies/new"
   end
   def create
     @prophecy = Prophecy.new(prophecy_params)
+    @prophecy.user_id = current_user.id
     @prophecy.save
     render "welcome/index"
   end
   def show
-    @prophecy = Prophecy.find(params[:id])
+    @prophecy = Prophecy.find(params[:p_id])
   end
   def list
     @prophecies = Prophecy.all
   end
+  def destroy
+    @prophecy = Prophecy.find params[:p_id]
+    @prophecy.destroy
+
+    redirect_to prophecies_path, :notice => "Your prophecy has been deleted"
+  end
   private
   def prophecy_params
-    params.require(:prophecy).permit(:id, :keyone, :keytwo, :keythree, :keyfour, :keyfive, :dateone, :datetwo)
+    params.require(:prophecy).permit(:p_id, :keyone, :keytwo, :keythree, :keyfour, :keyfive, :dateone, :datetwo)
   end
 end

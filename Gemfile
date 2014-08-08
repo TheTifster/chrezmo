@@ -35,6 +35,9 @@ gem 'forem-bootstrap', github: "radar/forem-bootstrap"
 gem 'forem-redcarpet', github: "radar/forem-redcarpet"
 #Calendar
 gem 'fullcalendar-rails'
+#Google
+gem 'google-search'
+gem 'google-api-client'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

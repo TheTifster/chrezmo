@@ -3,8 +3,30 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>www.chrezmo.com/Chrezmo-Logo-Name.gif</title>
-  <link href="Chrezmo.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="Chrezmo.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' href='assets/fullcalendar.css.scss' />
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/moment.min.js"></script>
+  <script src="assets/fullcalendar.js"></script>
+
+  <script type='text/javascript'>
+
+      $(document).ready(function() {
+          var date = new Date();
+          var d = date.getDate();
+          var m = date.getMonth();
+          var y = date.getFullYear();
+          $('#calendar').fullCalendar({
+              editable: true,
+              height: 650,
+              header: {
+                  left: 'today',
+                  center: 'prev,title,next',
+                  right: 'month,basicWeek,basicDay'
+              }
+          })
+      });
+
+  </script>
 
   <style type="text/css">
       #spokes {
@@ -38,7 +60,7 @@
   <%=image_tag("Chrezmo-Logo.gif", size:"500x500", id:"spokes")%>
 </div>
 <%= image_tag("Chrezmo-Letter-H.gif", size:"23x37", id:"homeSymbol", title:"Home") %>
-
+<body>
 <h1>Listing Prophecies</h1>
 
 <table>
@@ -51,10 +73,13 @@
     <th>Key Five</th>
     <th>Date One</th>
     <th>Date Two</th>
+    <th>Days</th>
   </tr>
-
+  <!--Loop database and print data to table in view-->
   <% @prophecies.each do |prophecy| %>
+      <% days = Date.parse(prophecy.datetwo.to_s) - Date.parse(prophecy.created_at.to_s)%>
       <tr>
+        <% if prophecy.user_id == current_user.id %>
         <td><%= prophecy.id %></td>
         <td><%= prophecy.keyone %></td>
         <td><%= prophecy.keytwo %></td>
@@ -62,8 +87,20 @@
         <td><%= prophecy.keyfour %></td>
         <td><%= prophecy.keyfive %></td>
         <td><%= prophecy.created_at.to_time.strftime('%b %d, %Y') %></td>
+        <td><%= prophecy.datetwo.to_time.strftime('%b %d, %Y') %></td>
+        <!--Calculates the difference between date-of-creation and date of prophecy-->
+        <td><%= days %></td>
+        <td><%= days - 10 %></td>
+        <td><%= link_to "Remove", prophecy, method: :delete, data: { confirm: "Are you sure?" } %></td>
+        <td><%= link_to 'New', {:controller => 'prophecies',:action => 'new'}%></td>
       </tr>
+    <% end %>
   <% end %>
+
+
 </table>
+
+<div id='calendar'></div>
+
 </body>
 </html>

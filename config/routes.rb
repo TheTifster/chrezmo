@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   mount Forem::Engine, :at => '/forums'
   devise_for :users
   resources :prophecies
+  resources :users do
+    resources :prophecies
+  end
   root "welcome#index"
   post ':controller(/:action(/:id(.:format)))'
   get ':controller(/:action(/:id(.:format)))'

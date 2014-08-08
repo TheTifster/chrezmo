@@ -3,10 +3,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>www.chrezmo.com/Chrezmo-Logo-Name.gif</title>
-  <link rel='stylesheet' href='assets/fullcalendar.css.scss' />
-  <script src="assets/jquery.min.js"></script>
-  <script src="assets/moment.min.js"></script>
-  <script src="assets/fullcalendar.js"></script>
 
   <style type="text/css">
       #spokes {
@@ -23,29 +19,7 @@
           z-index:1;
       }
   </style>
-  <script type='text/javascript'>$
-  $(document).ready(function() {
-      var date = new Date();
-      var d = date.getDate();
-      var m = date.getMonth();
-      var y = date.getFullYear();
-      $('#calendar').fullCalendar({
-          editable: true,
-          height: 650,
-          header: {
-              left: 'today',
-              center: 'prev,title,next',
-              right: 'month,basicWeek,basicDay'
-          },
-          events: [
-              {
-                  title: 'test',
-                  start: new Date(y, m, 23),
-                  allDay: true
-              }]
-      })
-  });
-  </script>
+
 
 </head>
 
@@ -55,15 +29,14 @@
   <div class="sidebar1">
     <ul class="nav">
       <%= link_to 'Home', main_app.root_path %><br />
-      <%= link_to'Prophecies', "prophecies/new" %><br />
+      <%= link_to'Prophecies', {:controller => 'prophecies',:action => 'new'}%> %><br />
       <%= link_to 'Forums', forem.forums_path %><br />
-      <%= link_to 'My Prophecies', "prophecies/" %><br />
+      <%= link_to 'My Prophecies', {:controller => 'prophecies',:action => 'index'}%> %> %><br />
     </ul>
     <p>Basic introductory paragraph</p>
     <!-- end .sidebar1 --></div>
   <%=image_tag("Chrezmo-Logo.gif", size:"500x500", id:"spokes")%>
 </div>
-<div id='calendar'></div>
 
 <%= image_tag("Chrezmo-Letter-H.gif", size:"23x37", id:"homeSymbol", title:"Home") %>
 </body>

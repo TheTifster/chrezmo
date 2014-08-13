@@ -91,8 +91,8 @@
         <!--Calculates the difference between date-of-creation and date of prophecy-->
         <td><%= days %></td>
         <td><%= days - 10 %></td>
-        <td><%= link_to "Remove", prophecy, method: :delete, data: { confirm: "Are you sure?" } %></td>
-        <td><%= link_to 'New', {:controller => 'prophecies',:action => 'new'}%></td>
+        <td><%= button_to 'Remove', prophecy, method: :delete, data: { confirm: "Are you sure?" } %></td>
+        <td><%= button_to 'New', {:controller => 'prophecies',:action => 'new'}%></td>
       </tr>
     <% end %>
   <% end %>

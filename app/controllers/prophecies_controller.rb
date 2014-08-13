@@ -1,4 +1,9 @@
 class PropheciesController < ApplicationController
+  before_filter :authenticate_user!
+  rescue_from ActiveRecord::RecordNotFound do
+    flash[:notice] = 'durf'
+    redirect_to "prophecies/index"
+  end
   def index
     @prophecies = Prophecy.all
     render "prophecies/index"
@@ -30,10 +35,10 @@ class PropheciesController < ApplicationController
     @prophecies = Prophecy.all
   end
   def destroy
-    @prophecy = Prophecy.find params[:p_id]
+    @prophecy = Prophecy.find(params[:p_id])
     @prophecy.destroy
 
-    redirect_to prophecies_path, :notice => "Your prophecy has been deleted"
+    redirect_to "/", :notice => "Your prophecy has been deleted"
   end
   private
   def prophecy_params

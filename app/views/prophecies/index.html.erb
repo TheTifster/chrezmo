@@ -77,7 +77,7 @@
   </tr>
   <!--Loop database and print data to table in view-->
   <% @prophecies.each do |prophecy| %>
-      <% days = Date.parse(prophecy.datetwo.to_s) - Date.parse(prophecy.created_at.to_s)%>
+      <% days = Date.parse(prophecy.datetwo.to_s) - Date.parse(prophecy.created_at.to_s) %>
       <tr>
         <% if prophecy.user_id == current_user.id %>
         <td><%= prophecy.id %></td>
@@ -91,7 +91,10 @@
         <!--Calculates the difference between date-of-creation and date of prophecy-->
         <td><%= days %></td>
         <td><%= days - 10 %></td>
-        <td><%= button_to 'Remove', prophecy, method: :delete, data: { confirm: "Are you sure?" } %></td>
+        <!--Calculates the volume of a sphere with radius of length(days), because why not-->
+        <td><%= number_with_precision((PropheciesController.new.sphere(days)), :precision => 2, :delimiter => ',') %></td>
+
+        <td><%= button_to 'Remove', {:controller => :prophecies, :action => 'destroy', :id => prophecy.id}, :method => :delete, data: { confirm: "Are you sure?" } %></td>
         <td><%= button_to 'New', {:controller => 'prophecies',:action => 'new'}%></td>
       </tr>
     <% end %>

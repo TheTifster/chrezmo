@@ -1,7 +1,7 @@
 class PropheciesController < ApplicationController
   before_filter :authenticate_user!
   rescue_from ActiveRecord::RecordNotFound do
-    flash[:notice] = 'durf'
+    flash[:notice] = 'Success'
     redirect_to "prophecies/index"
   end
   def index
@@ -35,11 +35,16 @@ class PropheciesController < ApplicationController
     @prophecies = Prophecy.all
   end
   def destroy
-    @prophecy = Prophecy.find(params[:p_id])
+    @prophecy = Prophecy.find(params[:id])
     @prophecy.destroy
-
-    redirect_to "/", :notice => "Your prophecy has been deleted"
+    redirect_to :action => :index, status: 303
   end
+  def sphere(radius)
+    sphereRatio = (4.0 / 3)
+    volume = sphereRatio * Math::PI * (radius ** 3)
+    return volume
+  end
+
   private
   def prophecy_params
     params.require(:prophecy).permit(:p_id, :keyone, :keytwo, :keythree, :keyfour, :keyfive, :dateone, :datetwo)

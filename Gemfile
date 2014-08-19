@@ -38,7 +38,8 @@ gem 'fullcalendar-rails'
 #Google
 gem 'google-search'
 gem 'google-api-client'
-
+#Emojis
+gem 'gemoji'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

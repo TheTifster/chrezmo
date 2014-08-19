@@ -65,22 +65,20 @@
 
 <table>
   <tr>
-    <th>ID</th>
-    <th>Key One</th>
-    <th>Key Two</th>
-    <th>Key Three</th>
-    <th>Key Four</th>
-    <th>Key Five</th>
-    <th>Date One</th>
-    <th>Date Two</th>
-    <th>Days</th>
+    <th>Key One |</th>
+    <th>Key Two |</th>
+    <th>Key Three |</th>
+    <th>Key Four |</th>
+    <th>Key Five |</th>
+    <th>Date One |</th>
+    <th>Date Two |</th>
+    <th>Days |</th>
   </tr>
   <!--Loop database and print data to table in view-->
   <% @prophecies.each do |prophecy| %>
       <% days = Date.parse(prophecy.datetwo.to_s) - Date.parse(prophecy.created_at.to_s) %>
       <tr>
         <% if prophecy.user_id == current_user.id %>
-        <td><%= prophecy.id %></td>
         <td><%= prophecy.keyone %></td>
         <td><%= prophecy.keytwo %></td>
         <td><%= prophecy.keythree %></td>
@@ -90,7 +88,6 @@
         <td><%= prophecy.datetwo.to_time.strftime('%b %d, %Y') %></td>
         <!--Calculates the difference between date-of-creation and date of prophecy-->
         <td><%= days %></td>
-        <td><%= days - 10 %></td>
         <!--Calculates the volume of a sphere with radius of length(days), because why not-->
         <td><%= number_with_precision((PropheciesController.new.sphere(days)), :precision => 2, :delimiter => ',') %></td>
 

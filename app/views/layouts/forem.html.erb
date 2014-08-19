@@ -12,6 +12,7 @@
     <%= content_tag(:div, value, class: "alert alert-#{key}") %>
 <% end %>
 <%= link_to 'Home', main_app.root_path %>
+<%= link_to 'Emoji Helper', "http://www.emoji-cheat-sheet.com/", :target => "_blank" %>
 
 <header>
   <nav>
@@ -19,7 +20,7 @@
         <%= link_to current_user.email, main_app.edit_user_registration_path %>
         | <%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>
         <% if current_user.forem_admin %>
-            | <%= link_to "Administrate", forem.admin_root_url %>
+            | <%= link_to "Super", forem.admin_root_url %>
         <% end %>
     <% else %>
         <%= link_to "Sign up", main_app.new_user_registration_path %>

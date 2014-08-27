@@ -14,7 +14,16 @@
 <% end %>
 
 <header>
-  <%= link_to 'Home', main_app.root_path %>
+  <%= link_to '| Home | ', main_app.root_path %>
+  <%= link_to 'Politics | ', {:controller => 'welcome', :action => 'forums_politics'} %>
+  <%= link_to 'Nature | ', {:controller => 'welcome', :action => 'forums_nature'} %>
+  <%= link_to 'Business | ', {:controller => 'welcome', :action => 'forums_business'} %>
+  <%= link_to 'Science | ', {:controller => 'welcome', :action => 'forums_science'} %>
+  <%= link_to 'Games | ', {:controller => 'welcome', :action => 'forums_games'} %>
+  <%= link_to 'TV | ', {:controller => 'welcome', :action => 'forums_tv'} %>
+  <%= link_to 'Sports | ', {:controller => 'welcome', :action => 'forums_sports'} %>
+
+
   <nav>
     <% if user_signed_in? %>
         <%= link_to current_user.email, main_app.edit_user_registration_path %>

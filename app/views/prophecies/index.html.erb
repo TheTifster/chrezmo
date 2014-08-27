@@ -27,26 +27,9 @@
       });
 
   </script>
-
-  <style type="text/css">
-      #spokes {
-          position:absolute;
-          top:150px;
-          left:200px;
-          z-index:0;
-      }
-
-      #homeSymbol {
-          position:absolute;
-          top:164px;
-          left:436px;
-          z-index:1;
-      }
-  </style>
-
 </head>
 
-<header><%=image_tag("Chrezmo-Logo-Name.png", size:"500x50") %></header>
+<header><%= image_tag("Chrezmo-Logo-Name.gif", size:"500x50") %></header>
 <h1>We saw it coming </h1>
 <div class="container">
   <div class="sidebar1">
@@ -57,9 +40,7 @@
     </ul>
     <p>Basic introductory paragraph</p>
     <!-- end .sidebar1 --></div>
-  <%=image_tag("Chrezmo-Logo.gif", size:"500x500", id:"spokes")%>
 </div>
-<%= image_tag("Chrezmo-Letter-H.gif", size:"23x37", id:"homeSymbol", title:"Home") %>
 <body>
 <h1>Listing Prophecies</h1>
 

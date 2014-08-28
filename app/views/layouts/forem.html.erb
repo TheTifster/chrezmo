@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Chrezmo</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -10,9 +10,10 @@
 
 <% flash.each do |key, value| %>
     <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+
 <% end %>
-<%= link_to 'Home', main_app.root_path %>
-<%= link_to 'Emoji Helper', "http://www.emoji-cheat-sheet.com/", :target => "_blank" %>
+    <%= link_to 'Home', main_app.root_path, :class => "myButton" %>
+    <%= link_to 'Emoji Helper', 'http://www.emoji-cheat-sheet.com/', :class => "myButton", :target => "_blank"%>
 
 <header>
   <nav>

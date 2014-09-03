@@ -6,6 +6,20 @@
   <%= javascript_include_tag 'application', 'forem', 'data-turbolinks-track' => true %>
 
   <%= csrf_meta_tags %>
+  <div class="container">
+<div class="header">
+  <h1><%= image_tag("Chrezmo-Logo-Name.gif", size:"400x100")%></h1>
+  <mainnav>
+    <%= link_to '| Home | ', main_app.root_path %>
+    <%= link_to 'Politics | ', {:controller => 'welcome', :action => 'forums_politics'} %>
+    <%= link_to 'Nature | ', {:controller => 'welcome', :action => 'forums_nature'} %>
+    <%= link_to 'Business | ', {:controller => 'welcome', :action => 'forums_business'} %>
+    <%= link_to 'Science | ', {:controller => 'welcome', :action => 'forums_science'} %>
+    <%= link_to 'Games | ', {:controller => 'welcome', :action => 'forums_games'} %>
+    <%= link_to 'TV | ', {:controller => 'welcome', :action => 'forums_tv'} %>
+    <%= link_to 'Sports | ', {:controller => 'welcome', :action => 'forums_sports'} %>
+  </mainnav>
+</div>
 </head>
 <body>
 <% flash.each do |key, value| %>

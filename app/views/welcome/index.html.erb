@@ -1,33 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.chrezmo.com">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
-
-<h1><%= image_tag("Chrezmo-Logo-Name.gif", size:"400x100") %></h1>
-
-<mainnav>
-<%= link_to '| Home | ', main_app.root_path %>
-<%= link_to 'Politics | ', {:controller => 'welcome', :action => 'forums_politics'} %>
-<%= link_to 'Nature | ', {:controller => 'welcome', :action => 'forums_nature'} %>
-<%= link_to 'Business | ', {:controller => 'welcome', :action => 'forums_business'} %>
-<%= link_to 'Science | ', {:controller => 'welcome', :action => 'forums_science'} %>
-<%= link_to 'Games | ', {:controller => 'welcome', :action => 'forums_games'} %>
-<%= link_to 'TV | ', {:controller => 'welcome', :action => 'forums_tv'} %>
-<%= link_to 'Sports | ', {:controller => 'welcome', :action => 'forums_sports'} %>
-</mainnav>
-
-<h2>We saw it coming </h2>
-<div class="container">
-  <div class="sidebar1">
-    <ul class="nav">
-      <%= link_to 'Home', main_app.root_path %><br />
-      <%= link_to'Prophecies', {:controller => 'prophecies',:action => 'new'}%> %><br />
-      <%= link_to 'Forums', forem.forums_path %><br />
-      <%= link_to 'My Prophecies', {:controller => 'prophecies',:action => 'index'}%> %> %><br />
-    </ul>
+<body>
+    <h2>We saw it coming </h2>
+        <div class="sidebar2">
+            <ul class="nav">
+              <%= link_to 'Home', main_app.root_path %><br />
+              <%= link_to'Prophecies', {:controller => 'prophecies',:action => 'new'}%> %><br />
+              <%= link_to 'Forums', forem.forums_path %><br />
+              <%= link_to 'My Prophecies', {:controller => 'prophecies',:action => 'index'}%> %><br />
+            </ul>
     <p>Basic introductory paragraph</p>
-    <!-- end .sidebar1 --></div>
-</div>
+    </div>
 </body>
 </html>

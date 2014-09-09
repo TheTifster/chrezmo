@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def index
+    @prophecies = Prophecy.all
   end
   def prophecy
   end
@@ -25,22 +26,6 @@ class WelcomeController < ApplicationController
   end
   def forums_games
     redirect_to "/forums/categories/games"
-  end
-  def keyone
-    @prophecy = Prophecy.new(params[:prophecy])
-    if @prophecy.save
-      redirect_to :action => 'index'
-    else
-      redirect_to "welcome/index"
-    end
-  end
-  def keytwo
-  end
-  def keythree
-  end
-  def keyfour
-  end
-  def keyfive
   end
   def new
     @prophecy = Prophecy.new

@@ -6,22 +6,6 @@
   <link href="Chrezmo.css" rel="stylesheet" type="text/css" media="all" />
   <link href="Chrezmo.css" rel="stylesheet" type="text/css" />
 
-  <style type="text/css">
-      #spokes {
-          position:absolute;
-          top:150px;
-          left:200px;
-          z-index:0;
-      }
-
-      #homeSymbol {
-          position:absolute;
-          top:164px;
-          left:436px;
-          z-index:1;
-      }
-  </style>
-
 </head>
 <body onload="MM_preloadImages('assets/Chrezmo-Letter-H-RED.gif')">
 
@@ -37,7 +21,6 @@
     </ul>
     <p>Basic introductory paragraph</p>
     <!-- end .sidebar1 --></div>
-  <%=image_tag("Chrezmo-Logo.gif", size:"500x500", id:"spokes")%>
   <p>
     <strong>Prophecy Number:</strong>
     <%= @prophecy.id %>

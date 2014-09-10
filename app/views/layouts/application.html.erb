@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div id="content-wrapper">
+<div id="wrapper">
 <html>
     <%= stylesheet_link_tag 'application', 'forem', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'forem', 'data-turbolinks-track' => true %>
@@ -8,16 +8,16 @@
     <div class="container">
         <div class="header">
             <h1><%= image_tag("chrezmo.com_name.gif", size:"400x100")%></h1>
-                <legend>
-                    <%= link_to '| Home | ', main_app.root_path %>
-                    <%= link_to 'Politics | ', {:controller => 'welcome', :action => 'forums_politics'} %>
-                    <%= link_to 'Nature | ', {:controller => 'welcome', :action => 'forums_nature'} %>
-                    <%= link_to 'Business | ', {:controller => 'welcome', :action => 'forums_business'} %>
-                    <%= link_to 'Science | ', {:controller => 'welcome', :action => 'forums_science'} %>
-                    <%= link_to 'Games | ', {:controller => 'welcome', :action => 'forums_games'} %>
-                    <%= link_to 'TV | ', {:controller => 'welcome', :action => 'forums_tv'} %>
-                    <%= link_to 'Sports | ', {:controller => 'welcome', :action => 'forums_sports'} %>
-                </legend>
+                <mainnav>
+                    <%= link_to 'Home', main_app.root_path, :class => "navButton"  %>
+                    <%= link_to 'Politics', {:controller => 'welcome', :action => 'forums_politics'}, :class => "navButton" %>
+                    <%= link_to 'Nature', {:controller => 'welcome', :action => 'forums_nature'}, :class => "navButton" %>
+                    <%= link_to 'Business', {:controller => 'welcome', :action => 'forums_business'}, :class => "navButton" %>
+                    <%= link_to 'Science', {:controller => 'welcome', :action => 'forums_science'}, :class => "navButton" %>
+                    <%= link_to 'Games', {:controller => 'welcome', :action => 'forums_games'}, :class => "navButton" %>
+                    <%= link_to 'TV', {:controller => 'welcome', :action => 'forums_tv'}, :class => "navButton" %>
+                    <%= link_to 'Sports', {:controller => 'welcome', :action => 'forums_sports'}, :class => "navButton" %>
+                </mainnav>
         </div>
     </div>
 </head>

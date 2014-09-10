@@ -2,51 +2,68 @@
 /* CSS Document */
 
 body {
-  background: #efffe6
+  background: #efffe6;
+  min-width: 750px;
 }
+
+.content-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
 /* unvisited link */
 a:link {
   color: #0000CC;
 }
+
 /* visited link */
 a:visited {
   color: #0000CC;
 }
+
 /* mouse over link */
 a:hover {
   color: #BF5C19;
 }
+
 a:link {
   text-decoration: none;
 }
+
 a:visited {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 nav {
   position: absolute;
   top: 50px;
   left: 790px;
 }
+
+.content-wrapper {
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
   width: auto;
   height: auto;
   background-color: #FFF;
   margin: auto;
-  padding: 0;
 }
+
 .header {
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
-  background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
-  background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
-  background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
-  background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
-  background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+  background-color: #72b352;
 }
+
 .sidebar2 {
-  position: absolute;
+  position: relative;
   top: 300px;
   background:#CCC;
   font-style:normal;
@@ -59,6 +76,7 @@ nav {
   height:100px;
   padding: 0;
 }
+
 ul.nav {
   color: #CCC;
   font: Arial, Helvetica, sans-serif;
@@ -74,16 +92,23 @@ ul.nav {
   border-right-style:outset;
   border-top-style:outset;
 }
-mainnav {
+
+legend {
   font-size: 24px;
   position: absolute;
-  top: 90px;
+  top: 70px;
   left: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 h1 {
-  image-orientation: center;
+  position: relative;
   padding: 0px;
+  top: 30px;
+  left: 30px;
 }
+
 h2 {
   font-family:Arial, Helvetica, sans-serif;
   font-style:italic;
@@ -91,22 +116,18 @@ h2 {
   font-weight:bold;
   color:#000;
   position: absolute;
-  top: 120px;
+  top: 150px;
   left: 25px;
 }
+
 sub {
   font-family:Arial, Helvetica, sans-serif;
   font-style:normal;
   font-size:24px;
   font-weight:bold;
   color:#000;
-  #spokes {
-    position:absolute;
-    top:25px;
-    left:0px;
-    z-index:0;
-  }
 }
+
 .myButton {
   -moz-box-shadow: 0px 10px 14px -7px #3e7327;
   -webkit-box-shadow: 0px 10px 14px -7px #3e7327;
@@ -133,6 +154,7 @@ sub {
   text-decoration:none;
   text-shadow:0px 1px 0px #5b8a3c;
 }
+
 .myButton:hover {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
   background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
@@ -143,6 +165,7 @@ sub {
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
   background-color:#72b352;
 }
+
 .myButton:active {
   position:relative;
   top:1px;

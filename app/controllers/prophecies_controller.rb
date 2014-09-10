@@ -1,7 +1,6 @@
 class PropheciesController < ApplicationController
   before_filter :authenticate_user!
   rescue_from ActiveRecord::RecordNotFound do
-    flash[:notice] = 'Success'
     redirect_to "prophecies/index"
   end
   def index

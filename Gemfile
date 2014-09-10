@@ -31,7 +31,7 @@ gem 'kaminari', '0.15.1'
 # Authentication
 gem "devise"
 #Forem theme
-gem 'forem-bootstrap', github: "radar/forem-bootstrap"
+gem 'forem-bootstrap', :github => "skwidensky/forem-bootstrap"
 gem 'forem-redcarpet', github: "radar/forem-redcarpet"
 #Calendar
 gem 'fullcalendar-rails'

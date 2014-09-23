@@ -35,25 +35,26 @@
     </ul>
     <p>Basic introductory paragraph</p>
     <!-- end .sidebar1 --></div>
-  <%= image_tag("Chrezmo-Logo.gif", size:"500x500", id:"spokes")%>
 </div>
-<%= image_tag("Chrezmo-Letter-H.gif", size:"23x37", id:"homeSymbol", title:"Home") %>
 <h1>New Prophecy</h1>
 
 <%= form_for :prophecy, url: prophecies_path do |f| %>
-    <%= f.label :keyone %><br>
+    <%= f.label "Keyword One" %><br>
     <%= f.text_field :keyone %><br>
-    <%= f.label :keytwo %><br>
+    <%= f.label "Keyword Two" %><br>
     <%= f.text_field :keytwo %><br>
-    <%= f.label :keythree %><br>
+    <%= f.label "Keyword Three" %><br>
     <%= f.text_field :keythree %><br>
-    <%= f.label :keyfour %><br>
+    <%= f.label "Keyword Four" %><br>
     <%= f.text_field :keyfour %><br>
-    <%= f.label :keyfive %><br>
+    <%= f.label "Keyword Five" %><br>
     <%= f.text_field :keyfive %><br>
-    <%= f.label :datetwo %><br>
+    <%= f.label "Date of Happening (YYYY-MM-DD)" %><br>
     <%= f.text_field :datetwo %><br>
-    <%= f.submit "Go" %>
+    <%= f.submit "Submit Prophecy" %>
 <% end %>
+
+<h2>Strong Prophecies</h2>
+
 </body>
 </html>

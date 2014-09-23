@@ -11,36 +11,20 @@
         <div class="sidebar2">
             <ul class="nav">
               <%= link_to 'Home', main_app.root_path %><br />
-              <%= link_to'Make a Prophecy', {:controller => 'prophecies',:action => 'new'}%> %><br />
+              <%= link_to'Prophecies', {:controller => 'prophecies',:action => 'new'}%> %><br />
               <%= link_to 'Forums', forem.forums_path %><br />
               <%= link_to 'My Prophecies', {:controller => 'prophecies',:action => 'index'}%> %><br />
             </ul>
-    <p>Basic introductory paragraph. Explain the premise and the basic idea here. Anonymous prophecy network</p>
-        </div>
-
-    <h3>Strong Prophecies. Print only those prophecies which match 3+ keywords, date, and have different users</h3>
-        <div class="sidebar1">
-            <% @prophecies.each do |prophecy| %>
-              <% date1 = prophecy.datetwo %>
-              <% @prophecies.each do |prophecy| %>
-                  <% if date1.eql?(prophecy.datetwo) == true %>
-                     <tr>
-                        <td><%= prophecy.keyone %></td>
-                        <td><%= prophecy.keytwo %></td>
-                        <td><%= prophecy.keythree %></td>
-                        <td><%= prophecy.keyfour %></td>
-                        <td><%= prophecy.keyfive %></td>
-                    </tr>
-                <% end %>
-               <% end %>
-              <% end %>
-        </div>
-    <h4>Weak Prophecies. Print only those prophecies which match either 1 or 2 keywords, date +/- 2 days, and have different users.</h4>
-
+    <p>Basic introductory paragraph</p>
+    </div>
 </body>
 </html>
+<<<<<<< HEAD
 </div>
 <<<<<<< HEAD
 </div>
 =======
 >>>>>>> a0cb6e848b3fc19e225683094add133a683d10b2
+=======
+</div>
+>>>>>>> 62316ce6ab9c333884e9acc8249442d96a30c288

@@ -40,6 +40,8 @@ gem 'google-search'
 gem 'google-api-client'
 #Emojis
 gem 'gemoji'
+#Nokogiri
+gem 'nokogiri'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
